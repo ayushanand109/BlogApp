@@ -2,12 +2,12 @@ import React from 'react'
 import { Container , Logo, LogoutBtn} from "../index"
 import {Link,  useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import {useNavigate} from "react-router-dom"
+
 
 function Header() {
   const authStatus=useSelector((state)=>state.auth.status)
 
-  const navigate=useNavigate()
+  const navigate=useNavigate();
 //navItems ko aise is liye likh rhe taaki conditional rendeering kr paye jiski zarurat ho bas wohi dikhe 
   const navItems=[
     {
